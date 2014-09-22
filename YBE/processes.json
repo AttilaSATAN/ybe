@@ -5,7 +5,7 @@
     "log_date_format"  : "YYYY-MM-DD HH:mm Z",
     "ignoreWatch" : ["[\\/\\\\]\\./", "node_modules"],
     "watch"       : "true",
-    "cwd"         : "/home/ybe/ybe.com/YBE/server.js",
+    "cwd"         : "/home/ybe/ybe.com/YBE",
     "env": {
         "NODE_ENV": "production",
         "PORT": "80"
