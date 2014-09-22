@@ -1,0 +1,14 @@
+{
+  "apps" : [{
+    "name"        : "YBE",
+    "script"      : "server.js",
+    "log_date_format"  : "YYYY-MM-DD HH:mm Z",
+    "ignoreWatch" : ["[\\/\\\\]\\./", "node_modules"],
+    "watch"       : "true",
+    "cwd"         : "/home/ybe/ybe.com/YBE/server.js",
+    "env": {
+        "NODE_ENV": "production",
+        "PORT": "80"
+    }
+  }]
+}
