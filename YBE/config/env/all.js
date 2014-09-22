@@ -2,13 +2,13 @@
 
 module.exports = {
 	app: {
-		title: 'YBE İnşaat',
-		description: 'Full-Stack JavaScript with MongoDB, Express, AngularJS, and Node.js',
-		keywords: 'mongodb, express, angularjs, node.js, mongoose, passport'
+		title: 'YBE Yapı',
+		description: '',
+		keywords: 'İnşaat, Dükkan Tasarım, Dış Cephe, Restorasyon'
 	},
 	port: process.env.PORT || 3000,
 	templateEngine: 'swig',
-	sessionSecret: 'MEAN',
+	sessionSecret: 'aşk böcüğüm',
 	sessionCollection: 'sessions',
 	assets: {
 		lib: {
