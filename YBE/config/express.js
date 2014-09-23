@@ -18,12 +18,16 @@ var express = require('express'),
 	flash = require('connect-flash'),
 	config = require('./config'),
 	consolidate = require('consolidate'),
-	path = require('path');
+	path = require('path'),
+    seo = require('mean-seo');
 
 module.exports = function(db) {
 	// Initialize express app
 	var app = express();
-
+    app.use(seo({
+        cacheClient: 'disk', // Can be 'disk' or 'redis'
+        cacheDuration: 2 * 60 * 60 * 24 * 1000, // In milliseconds for disk cache
+    }));
 	// Globbing model files
 	config.getGlobbedFiles('./app/models/**/*.js').forEach(function(modelPath) {
 		require(path.resolve(modelPath));

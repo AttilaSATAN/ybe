@@ -1,1 +1,25 @@
-il
+<div class="header-inner-wrapper home lupus-scroll full-height"  data-ng-init="
+map = {
+    center: {
+	    latitude: 39.8808322,
+	    longitude: 32.837972,
+    }
+};
+p = {
+    'id': 2,
+    'path': [{latitude:39.895272468218224,longitude:32.90935182580563},
+    {latitude:39.8808322,longitude:32.837972},
+    {latitude:39.89982106237153,longitude:32.90926933288574}],
+    'editable': false,
+    'draggable': false,
+    'geodesic': false,
+    'visible': true,
+    'stroke': { 'color': '#CDD5DC', 'weight': 1 },
+    'fill': { 'color': '#e8ebee', opacity:1}
+}">
+    <div class="middle">
+        <google-map center="map.center" zoom="14" draggable="true">
+        <polygon path="p.path" stroke="p.stroke" visible="p.visible" geodesic="p.geodesic" fill="p.fill" fit="false" editable="p.editable"></polygon>
+        </google-map>
+    </div>
+</div>
