@@ -16,6 +16,8 @@ module.exports = {
 				'public/lib/angular-ui-utils/ui-utils.min.js',
 				'public/lib/angular-bootstrap/ui-bootstrap-tpls.min.js',
                 'public/lib/lodash/dist/lodash.min.js',
+                'public/lib/angulartics/dist/angulartics.min.js',
+                'public/lib/angulartics/dist/angulartics-ga.min.js',
 				'//maps.googleapis.com/maps/api/js?sensor=false',
 				'public/lib/angular-google-maps/dist/angular-google-maps.js',
 			]

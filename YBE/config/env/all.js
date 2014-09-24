@@ -23,6 +23,8 @@ module.exports = {
 				'public/lib/angular-ui-router/release/angular-ui-router.js',
 				'public/lib/angular-ui-utils/ui-utils.js',
 				'public/lib/angular-bootstrap/ui-bootstrap-tpls.js',
+                'public/lib/angulartics/dist/angulartics.min.js',
+                'public/lib/angulartics/dist/angulartics-ga.min.js',
 				'public/lib/lodash/dist/lodash.min.js',
 				'//maps.googleapis.com/maps/api/js?sensor=false',
 				'public/lib/angular-google-maps/dist/angular-google-maps.js',

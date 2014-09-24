@@ -90,6 +90,7 @@
 body,
 html {
   height: 100%;
+  font-family: 'Titillium Web', sans-serif;
 }
 .undecorated-link:hover {
   text-decoration: none;
@@ -229,8 +230,9 @@ h3 {
   text-decoration: none;
 }
 .navigation-button a {
+  color: #be202e;
   font-family: 'Exo 2', sans-serif;
-  font-weight: 300;
+  font-weight: 900;
   position: relative;
   z-index: 1003;
   line-height: 50px;
