@@ -13,6 +13,7 @@
     "angular-ui-router": "~0.2.10",
     "lodash": "*",
     "angular-google-maps": "*",
-    "angulartics": "~0.16.5"
+    "angulartics": "~0.16.5",
+    "elusive-iconfont": "*"
   }
 }

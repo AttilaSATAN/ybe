@@ -2,7 +2,7 @@
 @import (reference)'../../../lib/bootstrap/less/bootstrap.less';
 @import (reference)'vars.less';
 @import (reference)'../../lupus-widgets/less/lupus.less';
-body,
+ body,
 html {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
@@ -112,6 +112,40 @@ background-color: @lupus-gray-0;
 }
 /***************************** /LAYOUT */
 
+.layout-side-menu,
+.layout-top-offset,
+.layout-left-offset {
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+.layout-top-offset {
+    
+} 
+.layout-left-offset {
+    margin-left: 16.666666666666664%;
+}
+.layout-side-menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: @menu-color;
+
+z-index: 1004;
+    transform: translate3d(-100%, 0, 0);
+    -webkit-transform: translate3d(-100%, 0, 0);
+    width: 100%;
+    &.open {
+        transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0);
+    }
+}
+@media(min-width:@screen-md){ .layout-side-menu {
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    width: 16.666666666666664%;
+}
+}
 h1,
 h3 {
     display: inline-block;
@@ -124,10 +158,9 @@ h3 {
     padding-left: 20px;
 }
 .navigation-button {
-    &.navigation-button:last-child {
+    &.navigation-button: last-child {
         border-bottom: 1px solid darken(@gray-darker, 10%);
     }
-    
     border-top:1px solid darken(@gray-darker, 10%);
     font-size:12px;
     position:relative;
@@ -147,7 +180,6 @@ h3 {
         width: 100%;
         height: 50px;
         z-index: 1002;
-
     }
     &:hover {
         .navigation-button-wrapper-lvl1 {
@@ -160,8 +192,9 @@ h3 {
         }
     }
     a {
-        color:@brand-color-1;
-        font-family: 'Exo 2', sans-serif;
+        color: @brand-color-1;
+
+font-family: 'Exo 2', sans-serif;
         font-weight: 900;
         position: relative;
         z-index: 1003;
@@ -170,7 +203,7 @@ h3 {
 }
 .brand-wrapper {
     padding: 10px;
-    &:hover {
+    &: hover {
         background-color: @gray-darker;
 
     }
@@ -579,10 +612,3 @@ transform: scale(0.01);
     }
 }
 /*======*/
-
-.asdasdad {
-    color: red;
-}
-#asdad {
-    backface-visibility: hidden;
-}

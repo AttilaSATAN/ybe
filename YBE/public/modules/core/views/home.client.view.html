@@ -1,23 +1,41 @@
 <section id="jsonltest" class="full-height home" data-ng-controller="HomeController">
-    <div class="left-aside full-height col-xs-2 padding0 lupus-scroll lupus-scroll-auto-hide">
+    <div class="layout-side-menu full-height padding0 lupus-scroll lupus-scroll-auto-hide">
         <div class="brand-wrapper">
-            <a ui-sref="home"><img src="modules/core/img/LightLogo.png" alt="" class="img-responsive"></a>
+            <a ui-sref="home">
+                <img src="modules/core/img/LightLogo.png" alt="" class="img-responsive">
+            </a>
         </div>
-        <div class="navigation-button" ><div class="navigation-button-wrapper-lvl1"></div><a style="display:block;" ui-sref="home.page({page:'biz'})">BİZ</a></div>
-        <div class="navigation-button" ><div class="navigation-button-wrapper-lvl1"></div><a style="display:block;" ui-sref="home.page({page:'insaat'})">İNŞAAT</a></div>
-        <div class="navigation-button" ><div class="navigation-button-wrapper-lvl1"></div><a style="display:block;" ui-sref="home.page({page:'tasarim'})">TASARIM & MİMARİ</a></div>
-        <div class="navigation-button" ><div class="navigation-button-wrapper-lvl1"></div><a style="display:block;" ui-sref="home.page({page:'restorasyon'})">RESTORASYON</a></div>
-        <div class="navigation-button" ><div class="navigation-button-wrapper-lvl1"></div><a style="display:block;" ui-sref="home.page({page:'altyapi'})">ALTYAPI</a></div>
-        <div class="navigation-button" ><div class="navigation-button-wrapper-lvl1"></div><a style="display:block;" ui-sref="home.page({page:'izolasyon'})">İZOLASYON</a></div>
-        <div class="navigation-button" ><div class="navigation-button-wrapper-lvl1"></div><a style="display:block;" ui-sref="home.page({page:'iletisim'})">İLETİŞİM</a></div>
+        <div class="navigation-button">
+            <div class="navigation-button-wrapper-lvl1"></div><a style="display:block;" ui-sref="home.page({page:'biz'})">BİZ</a>
+        </div>
+        <div class="navigation-button">
+            <div class="navigation-button-wrapper-lvl1"></div><a style="display:block;" ui-sref="home.page({page:'insaat'})">İNŞAAT</a>
+        </div>
+        <div class="navigation-button">
+            <div class="navigation-button-wrapper-lvl1"></div><a style="display:block;" ui-sref="home.page({page:'tasarim'})">TASARIM & MİMARİ</a>
+        </div>
+        <div class="navigation-button">
+            <div class="navigation-button-wrapper-lvl1"></div><a style="display:block;" ui-sref="home.page({page:'restorasyon'})">RESTORASYON</a>
+        </div>
+        <div class="navigation-button">
+            <div class="navigation-button-wrapper-lvl1"></div><a style="display:block;" ui-sref="home.page({page:'altyapi'})">ALTYAPI</a>
+        </div>
+        <div class="navigation-button">
+            <div class="navigation-button-wrapper-lvl1"></div><a style="display:block;" ui-sref="home.page({page:'izolasyon'})">İZOLASYON</a>
+        </div>
+        <div class="navigation-button">
+            <div class="navigation-button-wrapper-lvl1"></div><a style="display:block;" ui-sref="home.page({page:'iletisim'})">İLETİŞİM</a>
+        </div>
+        <span class="el-icon-facebook"></span>
     </div>
-    <div class="right-main-content full-height col-xs-10 lupus-asside-offset padding0">
+
+    <div class="right-main-content full-height col-xs-10 layout-left-offset padding0">
         <div class="content-outer-wrapper">
-            <div style="height:100%;"  class=" col-sm-6 col-xs-4 padding0">
-                <div style="height: 100%;" class="lupus-header-transition" data-ui-view="header-inner"></div>
+            <div  class=" col-sm-6 col-xs-4 padding0 full-height">
+                <div class="lupus-header-transition full-height" data-ui-view="header-inner"></div>
             </div>
-            <div style="height:100%;"  class=" col-sm-6 col-xs-8 padding0">
-                <div style="height: 100%;" class="lupus-page-transition" data-ui-view="content-inner"></div>
+            <div  class=" col-sm-6 col-xs-8 padding0 full-height">
+                <div class="lupus-page-transition full-height" data-ui-view="content-inner"></div>
             </div>
         </div>
     </div>
