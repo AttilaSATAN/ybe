@@ -143,8 +143,10 @@ html {
   height: 100%;
   width: 100%;
 }
-.header-inner-wrapper {
+.header-inner {
   border-right: 11px solid #be202e;
+}
+.header-inner-wrapper {
   background-color: #f8f8f8;
   -moz-box-shadow: inset -5px 0 5px rgba(79, 80, 81, 0.6);
   -webkit-box-shadow: inset -5px 0 5px rgba(79, 80, 81, 0.6);
