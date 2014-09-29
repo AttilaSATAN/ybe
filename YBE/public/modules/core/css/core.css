@@ -124,14 +124,7 @@ html {
   right: 0;
   left: 0;
 }
-/* LAYOUT */
-.right-main-content {
-  position: relative;
-  background-color: silver;
-  overflow-x: hidden;
-  overflow: hidden;
-  height: 100%;
-}
+/*************************** LAYOUT *************/
 .content-outer-wrapper {
   height: 100%;
 }
@@ -151,7 +144,7 @@ html {
   width: 100%;
 }
 .header-inner-wrapper {
-  border-right: 11px solid #dadee3;
+  border-right: 11px solid #be202e;
   background-color: #f8f8f8;
   -moz-box-shadow: inset -5px 0 5px rgba(79, 80, 81, 0.6);
   -webkit-box-shadow: inset -5px 0 5px rgba(79, 80, 81, 0.6);
@@ -170,7 +163,7 @@ html {
   -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg);
   margin: 0;
-  color: #dadee3;
+  color: #be202e;
   -webkit-text-shadow: 0 -5px 5px rgba(79, 80, 81, 0.6);
   text-shadow: 0 -5px 5px rgba(79, 80, 81, 0.6);
   font-size: 49px;
@@ -187,9 +180,36 @@ html {
   padding: 20px;
 }
 /***************************** /LAYOUT */
-.layout-side-menu {
+.layout-main-content {
+  width: 100%;
+  position: relative;
+  background-color: silver;
+  overflow-x: hidden;
+  overflow: hidden;
+}
+.layout-side-menu,
+.layout-side-menu-button,
+.layout-header,
+.layout-content,
+.layout-left-offset {
   -webkit-transition: .5s;
   transition: .5s;
+}
+.layout-left-offset {
+  margin-left: 0;
+}
+.layout-header,
+.layout-content {
+  float: left;
+  min-height: 1px;
+}
+.layout-header {
+  width: 50%;
+}
+.layout-content {
+  width: 50%;
+}
+.layout-side-menu {
   position: fixed;
   left: 0;
   top: 0;
@@ -205,6 +225,12 @@ html {
   -webkit-transform: translate3d(0, 0, 0);
 }
 @media (min-width: 992px) {
+  .layout-main-content {
+    width: 83.33333333333334%;
+  }
+  .layout-left-offset {
+    margin-left: 16.666666666666664%;
+  }
   .layout-side-menu {
     transform: translate3d(0, 0, 0);
     -webkit-transform: translate3d(0, 0, 0);
@@ -268,15 +294,12 @@ h3 {
   background-color: #222222;
 }
 /******************* ÖZEL *************************/
-.home h1 {
+.header-ybe {
   font-family: 'Titillium Web', sans-serif;
   text-shadow: 5px 5px 5px rgba(121, 121, 121, 0.5);
   font-weight: 600;
   font-size: 30px;
   color: #555555;
-}
-.header-inner-wrapper.home {
-  border: none;
 }
 /*===========================*/
 /* Angular Motion */

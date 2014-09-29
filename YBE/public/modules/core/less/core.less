@@ -39,15 +39,9 @@ html {
     right: 0;
     left: 0;
 }
-/* LAYOUT */
+/*************************** LAYOUT *************/
 
-.right-main-content {
-    position: relative;
-    background-color: silver;
-    overflow-x: hidden;
-    overflow: hidden;
-    .full-height();
-}
+
 .content-outer-wrapper {
     .full-height();
 }
@@ -68,14 +62,13 @@ html {
     width: 100%;
 }
 .header-inner-wrapper {
-    border-right: 11px solid@lupus-gray-3;
-
-background-color: @lupus-gray-0;
-
--moz-box-shadow: inset -5px 0 5px rgba(79, 80, 81, 0.6);
+    border-right: 11px solid @brand-color-1;
+    background-color: @lupus-gray-0;
+    -moz-box-shadow: inset -5px 0 5px rgba(79, 80, 81, 0.6);
     -webkit-box-shadow: inset -5px 0 5px rgba(79, 80, 81, 0.6);
     box-shadow: inset -5px 0 5px rgba(79, 80, 81, 0.6);
     position: relative;
+    
     .vertical-header {
         width: 35px;
         position: absolute;
@@ -90,7 +83,7 @@ background-color: @lupus-gray-0;
             -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
             margin: 0;
-            color: #dadee3;
+            color: @brand-color-1;
             -webkit-text-shadow: 0 -5px 5px rgba(79, 80, 81, 0.6);
             text-shadow: 0 -5px 5px rgba(79, 80, 81, 0.6);
             font-size: 49px;
@@ -111,18 +104,33 @@ background-color: @lupus-gray-0;
     }
 }
 /***************************** /LAYOUT */
-
+.layout-main-content{
+    width:100%;
+    position: relative;
+    background-color: silver;
+    overflow-x: hidden;
+    overflow: hidden;
+}
 .layout-side-menu,
-.layout-top-offset,
+.layout-side-menu-button,
+.layout-header,
+.layout-content,
 .layout-left-offset {
     -webkit-transition: .5s;
     transition: .5s;
 }
-.layout-top-offset {
-    
-} 
 .layout-left-offset {
-    margin-left: 16.666666666666664%;
+    margin-left: 0;
+}
+.layout-header,.layout-content{
+    float:left;
+    min-height: 1px;
+}
+.layout-header{
+    width:50%;
+}
+.layout-content{
+    width:50%;
 }
 .layout-side-menu {
     position: fixed;
@@ -130,8 +138,7 @@ background-color: @lupus-gray-0;
     top: 0;
     bottom: 0;
     background-color: @menu-color;
-
-z-index: 1004;
+    z-index: 1004;
     transform: translate3d(-100%, 0, 0);
     -webkit-transform: translate3d(-100%, 0, 0);
     width: 100%;
@@ -140,11 +147,18 @@ z-index: 1004;
         -webkit-transform: translate3d(0, 0, 0);
     }
 }
-@media(min-width:@screen-md){ .layout-side-menu {
-    transform: translate3d(0, 0, 0);
-    -webkit-transform: translate3d(0, 0, 0);
-    width: 16.666666666666664%;
-}
+@media(min-width:@screen-md){ 
+    .layout-main-content{
+        width:83.33333333333334%;
+    }
+    .layout-left-offset {
+        margin-left: 16.666666666666664%;
+    }
+    .layout-side-menu {
+        transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0);
+        width: 16.666666666666664%;
+    }
 }
 h1,
 h3 {
@@ -158,7 +172,7 @@ h3 {
     padding-left: 20px;
 }
 .navigation-button {
-    &.navigation-button: last-child {
+    &.navigation-button:last-child {
         border-bottom: 1px solid darken(@gray-darker, 10%);
     }
     border-top:1px solid darken(@gray-darker, 10%);
@@ -203,26 +217,23 @@ font-family: 'Exo 2', sans-serif;
 }
 .brand-wrapper {
     padding: 10px;
-    &: hover {
+    &:hover {
         background-color: @gray-darker;
 
     }
 }
 /******************* ÖZEL *************************/
 
-.home {
-    h1 {
-        font-family: 'Titillium Web', sans-serif;
-        text-shadow: 5px 5px 5px rgba(121, 121, 121, 0.5);
-        font-weight: 600;
-        font-size: 30px;
-        color: @gray;
+.header-ybe{
+    font-family: 'Titillium Web', sans-serif;
+    text-shadow: 5px 5px 5px rgba(121, 121, 121, 0.5);
+    font-weight: 600;
+    font-size: 30px;
+    color: @gray;
 
-    }
 }
-.header-inner-wrapper.home {
-    border: none;
-}
+
+
 /*===========================*/
 
 /* Angular Motion */
