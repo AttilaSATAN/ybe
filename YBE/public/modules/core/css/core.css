@@ -124,6 +124,15 @@ html {
   right: 0;
   left: 0;
 }
+.social-links {
+  color: #1b1f24;
+  text-align: center;
+}
+.social-links:hover,
+.social-links:focus {
+  color: #be202e;
+  text-decoration: none;
+}
 /*************************** LAYOUT *************/
 .content-outer-wrapper {
   height: 100%;
