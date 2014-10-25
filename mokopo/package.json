@@ -1,0 +1,27 @@
+{
+  "name": "mokopo",
+  "version": "0.0.0",
+  "description": "0.0.1a",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AttilaSATAN/mopoko"
+  },
+  "keywords": [
+    "polymer",
+    "mongodb",
+    "koa"
+  ],
+  "author": "Attila SATAN <attila.satan@gmail.com> (http://lupuseum.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AttilaSATAN/mopoko/issues"
+  },
+  "homepage": "https://github.com/AttilaSATAN/mopoko",
+  "devDependencies": {
+    "gulp": "^3.8.9"
+  }
+}
